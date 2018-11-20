@@ -1,0 +1,58 @@
+
+
+/* ---------- General ---------- */
+body {
+
+}
+
+img,
+video,
+object,
+embed {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+/* ---------- Main ---------- */
+.content {
+
+}
+
+/* ---------- Heading ---------- */
+
+.header {
+  display: flex;
+  width: 100%;
+}
+.header-logo{
+  width: 30%;
+}
+
+.header-info {
+  width: 70%;
+}
+
+/* ---------- Featured Section ---------- */
+.featured-item {
+  width: 33.333%;
+}
+
+.featured-work {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.featured-item {
+  width: 250px;
+}
+
+.featured-img {
+  width: 100%;
+}
+
+/* ---------- Footer ---------- */
