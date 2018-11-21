@@ -1,0 +1,123 @@
+/*---General---*/
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*---Header Section---*/
+
+header {
+  border-bottom: solid 4px #7d97ad;
+  margin-left: 0 !Important;
+  margin-right: 0 !Important;
+}
+
+.header-info{
+  margin-right: 2em;
+  margin-top: 20px;
+  justify-content: center;
+
+  text-align: right;
+  color: #2d3c49;
+}
+
+.header-info {
+  text-align: right;
+}
+
+.header-border {
+  border-bottom: solid 4px #7d97ad;
+}
+
+.logo-img {
+  width: 150px;
+}
+
+.header-logo{
+  margin-left: -20px;
+padding-left: 0;
+}
+
+
+
+/*---Banner Section---*/
+#main-banner {
+  margin-top: 10px;
+}
+
+/*---Feature Section---*/
+
+.feature-heading {
+  color: #7d97ad;
+  margin-left: 10px;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-content, .feature-title {
+  margin-top: 10px;
+}
+
+.feature-link {
+  text-decoration: none;
+}
+
+.feature-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+/*---Footer Section---*/
+
+
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  .header-name {
+    font-size: 1.5em;
+  }
+
+  .header-role {
+    font-size: 1.2em;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 480px) {
+  .header-name {
+    font-size: 1.5em;
+  }
+
+  .header-role {
+    font-size: 1.2em;
+  }
+
+  .logo-img{
+    width: 70px;
+  }
+
+
+
+}
