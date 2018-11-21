@@ -15,7 +15,12 @@ header {
   margin-left: 0 !Important;
   margin-right: 0 !Important;
   text-align: center;
-    color: #2d3c49;
+  color: #2d3c49;
+}
+
+/*---Navigation Section---*/
+.nav-link {
+  font-size: 1.5vw;
 }
 
 /*---Banner Section---*/
@@ -52,11 +57,11 @@ header {
 
 /*---Footer Section---*/
 footer {
-margin-top: 50px;
-width: 100%;
-height: 60px;
-line-height: 60px;
-background-color: #f5f5f5;
+  margin-top: 50px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
 }
 
 footer li {
@@ -69,16 +74,17 @@ footer a {
   color: #7d97ad;;
   padding: 0.7em;
   padding-right: 30px;
+  font-size: 1.5vw;
 }
 
-.footer-items{
+.footer-items {
   text-align: center;
 }
 
 @media only screen and (min-width: 400px) {
 
   /*---Feature Section---*/
-  .feature-img{
+  .feature-img {
     width: 100%;
   }
 
@@ -90,13 +96,18 @@ footer a {
     font-size: 3vw;
   }
 
+  /*---Navigation Section---*/
+  .nav-link {
+    font-size: 3vw;
+  }
+
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
 
   /*---General---*/
   body {
-    font-size: 1.5vw;
+    font-size: 3vw;
   }
 
   /*---Header Section---*/
@@ -113,7 +124,12 @@ footer a {
     font-size: 2vw;
   }
 
-/*---Feature Section---*/
+  /*---Navigation Section---*/
+  .nav-link {
+    font-size: 2vw;
+  }
+
+  /*---Feature Section---*/
   .feature-title {
     font-size: 2vw;
   }
@@ -122,9 +138,17 @@ footer a {
     font-size: 3vw;
   }
 
+  .feature-link {
+    font-size: 1.5vw;
+  }
+
+  .feature-text {
+    line-height: 8px;
+  }
+
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
 
   /*---General---*/
   body {
@@ -137,16 +161,25 @@ footer a {
   }
 
   .header-role {
-    font-size: 1vw;
+    font-size: 2vw;
   }
 
-  .header-info{
+  .header-info {
     padding-top: 30px;
   }
 
   /*---Banner Section---*/
-  .banner-img{
+  .banner-img {
     width: 100%;
+  }
+  /*---Navigation Section---*/
+  .nav-link {
+    font-size: 1.5vw;
+  }
+
+  /*---Feature Section---*/
+  .feature-link {
+    font-size: 1.2vw;
   }
 
 }
