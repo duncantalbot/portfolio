@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Duncan Talbot's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
@@ -16,7 +17,7 @@
         </div>
         <div class="col-md-10 header-info">
           <h1 class="header-name">DUNCAN TALBOT</h1>
-          <h6 class="header-role">FRONT-END DEVELOPER</h6>
+          <h5 class="header-role">FRONT-END DEVELOPER</h5>
         </div>
         <hr class="divder">
       </header>
@@ -24,10 +25,11 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!--TODO (Add Navigation URL Links)-->
         <div class="collapse navbar-collapse" id="navContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About<span class="sr-only"></span></a>
+              <a class="nav-link" href="#">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Projects</a>
@@ -38,11 +40,15 @@
           </ul>
         </div>
       </nav>
-      <section class="row" id="main-banner">
+      <div class="row" id="main-banner">
         <div class="col-md-12">
-          <img srcset="img/banner-large.jpg 1200w, img/banner-780.jpg 768w, img/banner-400.jpg 400w" src="img/banner-large.jpg" alt="Banner Image" class="banner-img">
+          <picture class="banner-img">
+            <source media="(min-width: 768px)" srcset="img/html-banner-1200.jpg">
+            <source media="(min-width: 460px)" srcset="img/html-banner-768.jpg">
+            <img src="img/html-banner-400.jpg" class="main-banner-img" alt="Main Banner Image">
+          </picture>
         </div>
-      </section>
+      </div>
       <section class="feature-content">
         <div class="row">
           <div class="col-md-12">
@@ -51,32 +57,49 @@
         </div>
         <div class="row feature-work">
           <article class="col-md-4 feature-item">
-              <img src="img/responsive-web-design.jpg" alt="" class="feature-img">
-              <h3 class="feature-title">APPIFY</h3>
-              <p class="feature-text"><a href="#" class="feature-link">https://github.com/udacity/appify/</a></p>
+            <picture class="feature-img">
+              <source media="(min-width: 460px)" srcset="img/memory-image-768.jpg">
+              <img src="img/memory-image-400.jpg" alt="App Icons Image">
+            </picture>
+            <div class="feature-info">
+              <h3 class="feature-title">MEMORY</h3>
+              <p class="feature-text"><a href="#" class="feature-link">https://github.com/udacity/memory/</a></p>
+            </div>
           </article>
           <article class=" col-md-4 feature-item">
-              <img src="img/responsive-web-design.jpg" alt="" class="feature-img">
-              <h3 class="feature-title">SUNFLOWER</h3>
-              <p class="feature-text"><a href="#" class="feature-link">https://github.com/udacity/sunflower/</a></p>
+            <picture class="feature-img">
+              <source media="(min-width: 460px)" srcset="img/arcade-image-768.jpg">
+              <img src="img/arcade-image-400.jpg" alt="Restaurant Reviews Image">
+            </picture>
+            <div class="feature-info">
+              <h3 class="feature-title">ARCADE</h3>
+              <p class="feature-text"><a href="#" class="feature-link">https://github.com/udacity/arcade/</a></p>
+            </div>
           </article>
           <article class=" col-md-4 feature-item">
-              <img src="img/responsive-web-design.jpg" alt="" class="feature-img">
-              <h3 class="feature-title">BOKEH</h3>
-              <p class="feature-text"><a href="#" class="feature-link">https://github.com/udacity/bokeh/</a></p>
+            <picture class="feature-img">
+              <source media="(min-width: 460px)" srcset="img/reviews-image-768.jpg">
+              <img src="img/reviews-image-400.jpg" alt="Restaurant Reviews Image">
+            </picture>
+            <div class="feature-info">
+              <h3 class="feature-title">REVIEWS</h3>
+              <p class="feature-text"><a href="#" class="feature-link">https://github.com/udacity/reviews/</a></p>
+            </div>
           </article>
         </div>
       </section>
-      <footer id="footer">
-          <ul class="footer-items">
-            <li class="nav-item"><a href="#">Linked</a></li>
-            <li class="nav-item"><a href="#">Twitter</a></li>
-            <li class="nav-item"><a href="#">Facebook</a></li>
-          </ul>
+      <footer class="footer">
+        <!--TODO (Add Social URL Links)-->
+        <ul class="footer-items">
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-linkedin"></a></li>
+          <li><a href="#" class="fa fa-skype"></a></li>
+        </ul>
       </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>
